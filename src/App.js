@@ -57,7 +57,7 @@ class App extends Component {
   }
 
   getPriceDatasetForTicker (ticker) {
-    return window.fetch(`http://localhost:8080/mostrecentquotes/${ticker}`).then(response => response.json())
+    return window.fetch(`http://localhost:8080/api/mostrecentquotes/${ticker}`).then(response => response.json())
   }
 
   getPriceDatasetsForTickers (tickers) {
