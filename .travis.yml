@@ -8,7 +8,7 @@ script:
 - npm run build
 deploy:
   provider: heroku
-  buildpack: static
+  buildpack: https://github.com/heroku/heroku-buildpack-static.git
   api_key:
     secure: HmOe9SZdu486G5BFl560YY5DayleXsQBASXbanxBSi+symlnn+I6lMkvWP+SEq+ikUnc+ix+lOdTyMJGB3ZxeT19OV02Z/5NtvBBbJUXlEVp5vtWYsAWoHOhxTKrYVdRArYNikvifniRPGiGFnILqEX8httfEeQYy3hOjC2JC88Mf6z17kCxYF6eA1xj7Iq0/9CXyPYbfBhUtMgLFchzJyvKiTvehhQCP/Opt9SEET18tEmG4uVUMnp6BcHWW2jbSiseFSF/WQGKf4KQin/2NmXVmR7vDYhIeZbK/TNClpPB7LP90l5OYCmZpvLxgmdfbvR3KZ70If6rSaGhxQTb4k66UkXV9tMgbKZuA4P5c+N3MOUgxGE5JsYCMlyzV3Ijm1NrmqTTTh5bZJmVa+VMfMysFX41zijxh76BSHWL6hdVp9tXT58WcH+r/vlOdp97mq0vzaptYb9hY0VgQc9goeaFz3AOLdNeVt6rKZ8P4T+n0aUuJCo+cDc4diDXgTZ4W20I0xZxqX329Nhng3cJrII0WsjK4mhJQDBOZ38EsMOaMlfd+YURi0SXcpsTLP5yb8ot6Y1a/7YDmwIwRYiUD9qO4EXd57HyT5DGzQtbzhugD4oV1vaaZXCh95QhUt/IznvdBAJyOF/bWsGJEaOaI+PxqgB91gmnBdQgP3+UfVk=
   skip_cleanup: true
