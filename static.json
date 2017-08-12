@@ -1,9 +1,8 @@
 {
-  "clean_urls": true,
+  "root": "build/",
   "proxies": {
     "/api/": {
-      "origin": "https://stockwatch-server.herokuapp.com/"
+      "origin": "${API_URL}"
     }
-  },
-  "root": "build/"
+  }
 }
